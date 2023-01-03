@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abril Fatface', sans-serif;
+}
+.header {
+    background-image: url(./image/image.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 170vh;
+    width: auto;
+    display: flex;
+}
+.header-title {
+background-color: transparent;
+box-shadow: 1px 1px 10px 10px #888888;
+width: 400px;
+height: 350px;
+margin-top: 80px;
+margin-left: 100px;
+padding: 10px;
+
+}
+.header-title-line h1 {
+    font-size: 70px;
+    width: 160px;
+    padding-left: 20px;
+    padding-top: 35px;
+}
+.header-title-line h2 {
+    font-size: 20px;
+    width: 160px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.header-title-line h3 {
+    border-top: 1px solid white;
+    width: 160px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.header-info {
+   background-color: #eeeeee;
+    background-image: linear-gradient(270deg, #eeeeee 0%, #9d938c 100%);;
+    box-shadow: 1px 1px 10px 10px #888888;
+    width: 450px;
+height: 450px;
+margin-top: 450px;
+margin-left: 900px;
+padding-left: 10px;
+padding-top: 50px;
+}
+.header-info p {
+    font-size: 30px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 50px;
+    color: white;
+}
+
+.our-services, .contact {
+    background-color: #F2F0F3;
+}
+.info-right {
+    background-color: #BAB1AD;
+}
+.info {
+    display: flex ;
+}
+.info-right {
+    height: 150vh;
+    width: 25%;
+}
+.our-services{
+    height: 110vh;
+    width: auto;
+}
+.contact{
+    height: 40vh;
+    width: auto;
+}
+.info-left{
+    height: 150vh;
+    width: 75%;
+}
+.info-right div {
+padding-left: 20px;
+padding-top: 70px;
+padding-bottom: 50px;
+}
+.info-right h2 {
+    font-size: 40px;
+}
+.numbers {
+    font-size: 120px;
+    color: white;
+}
+.our-services h1, .contact h1{
+    
+    font-size: 70px;
+    padding-left: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+}
