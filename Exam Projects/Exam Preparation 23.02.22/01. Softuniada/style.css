@@ -1,0 +1,40 @@
+/* @import url("/matrix.css"); */
+@import url("/reset.css");
+
+.calendar {
+    max-width: 1000px;
+    margin-inline: auto;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px 2px;
+}
+.calendar_topbar{
+background-color: #ffa200;
+padding: 0.75rem;
+color: white;
+}
+.calendar_topbar span{
+  margin-left: .5rem;
+  font-size: 14px;
+    }
+    .event {
+        padding: 1.5rem 1rem 4rem;
+        border-bottom: 1px solid gray;
+    }
+    .event .event_time{
+        font-size: 12px;
+        color: gray;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+    .event a {
+        text-decoration: none;
+    }
+    .event .event_title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .event .event_desc {
+       line-height: 1.4;
+    }
