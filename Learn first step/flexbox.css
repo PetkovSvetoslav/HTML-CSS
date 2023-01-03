@@ -1,0 +1,49 @@
+@import url('matrix.css');
+.container {
+    border: 2px solid black;
+    background: bisque;
+    padding: 1em;
+    display: flex;
+
+    /* column подрежда елементите едно под друго */
+    /* flex-direction: column-reverse; */
+    /* row подрежда елементите едно до друго */
+    /* flex-direction: row-reverse; */
+
+    flex-wrap: wrap;
+    /* row подрежда елементите едно до друго и ги сваля на следващи редове според зададеният % от flex-basis:*/
+    justify-content: space-around;
+    /* justify-content: flex-start; */
+    /* позиционира елементите, може и да създава място между тях */
+    min-height: 300px;
+align-items: flex-end;
+/* подравнява елементите по таван,основа,център,линия или ги разпъва/запълва контейнера */
+align-content: flex-start;
+/* подрежда елементите по таван,основа,център,линия или ги разпъва/запълва контейнера */
+
+
+/* flex-direction: column; */
+/* създава вид подредба на елементите */
+}
+.item {
+    border: 1px solid black;
+    background:blueviolet;
+    margin: 0.5em;
+    /* wrap */
+    /* flex-basis: 30%; */
+
+flex-grow: 1;
+/*кара елементите да разстат в дадена посока*/
+flex-shrink: 0;
+/*кара елементите да se swiwatа, но пропорционално на екрана*/
+flex-basis: 100%;
+/* какво място ще запълнят */
+
+/* flex: 1 0 100%; краткото на  flex-grow,flex-shrink,flex-basis*/
+}
+/* .item:nth-child(1) {
+    margin-right: auto;
+    flex-grow: 3;
+    order: 7;
+    мести позиция на ел. спрямо другите
+} */

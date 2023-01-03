@@ -1,0 +1,54 @@
+@import url('matrix.css');
+.site {
+    margin: 1em;
+    padding: 1em;
+    min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+.site-content {
+flex-grow: 1;
+}
+.site-header {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid black;
+}
+.site-footer {
+    padding-top: 1em;
+    margin-top: 1em;
+    border-top: 2px solid black;
+}
+
+/* Статичен хедар и футър */
+/* .site-header, .site-footer  {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2em;
+    background: red;
+    color: white;
+} */
+
+
+/* елемент в центъра със сянка */
+
+.site-content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+.site-content p {
+    background-color: aquamarine;
+    box-shadow: 0 0 1 0 rgba(0, 0, 0, 0.5);
+    width: 30em;
+    height: auto;
+    padding: 1em;
+    border-radius: 1em;
+
+}

@@ -1,0 +1,71 @@
+@import url('exerciseHtmlCss.css');
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    /* дава крайна стойност на шир. и дължина прави респонсив сайта */
+    max-width: auto;
+    max-height: auto;
+ /* дава крайна стойност на шир. и създава скролери отстрани или отдоло */
+min-width: none;
+min-height: auto;
+}
+.site-main {
+display: inline-block;
+width: 70%;
+}
+.site-sidebar {
+    display: inline-block;
+    width: 29%;
+    vertical-align: top;
+}
+.site-header h1 {
+    padding-top: 0;
+    line-height: 1;
+}
+.site-header {
+    border-bottom: 2px solid red;
+    padding: 1em 1.5em;
+    padding-top: 2em;
+}
+.site-footer {
+    border-top: 2px solid red;
+    padding: 1em 1.5em;
+}
+.site-branding {
+    display: inline-block;
+    width: 60%;
+}
+.site-header nav {
+    display: inline-block;
+    width: 39%;
+    vertical-align: top;
+}
+
+.nav ul li{
+    display: inline-block;
+}
+.nav {
+    text-align: right;
+}
+.nav a {
+    display: block;
+    padding: 0.5em 1em;
+    background: gray;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.nav a:hover {
+background: red;
+color: gray;
+}
+.entry {
+    padding: 0 1em;
+}

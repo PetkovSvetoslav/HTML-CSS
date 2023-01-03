@@ -1,0 +1,104 @@
+html {
+    font: 14px/1.5 Verdana, sans-serif;
+}
+body, form, input, textarea, option, select, button {
+    font: inherit;
+}
+/* глобален селектор за всички елементи в html но може да бъде и много специфичен */
+
+
+* {
+  padding: 0;
+  margin: 0;  
+}
+body {
+    max-width: 50em;
+    margin: 0 auto;
+}
+p {
+    padding-top: 1.5em;
+}
+p, ul, ol {
+    padding-bottom: 1.5em;
+}
+ul, ol {
+    padding-left: 2em;
+}
+/* маха цифрите/точките от ul и ol */
+/* li {
+    list-style: none;
+} */
+
+
+/* rem дава едно и също разстояние на заглавията, докато em дава пропорционално на големината на заглавието */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal ;
+    margin: 0;
+    padding-top: 1.5em;
+    padding-bottom: 1rem;
+}
+blockquote {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    border-left: solid 2px slateblue;
+    margin-bottom: 1.5em;
+}
+blockquote p {
+    font-style: italic;
+    padding: 0;
+}
+blockquote p:last-child{
+    padding-bottom: 0;
+}
+blockquote p.autor {
+    text-align: right;
+}
+
+ /* Задача с Бутони  */
+ /* импорт на css в css но не работи ! затова директно в html */
+ /* @import url("../css/all.css"); */
+ /* @import url("D:\PROGRAMING\Html & Css learn\Html&Css fontawesome-free-6.1.1-web\css\all.css"); */
+ .button {
+     display: inline-block;
+     margin-right: 3em;
+     border: 2px solid black;
+     background: transparent;
+     text-decoration: none;
+     color: inherit;
+     border-radius: 0.5em;
+     padding: 1em 1.5em;
+     font-weight: bold;
+     text-transform: capitalize;
+     cursor: pointer;
+ }
+
+ .button.fill {
+     background: black;
+     color: white;
+ }
+
+ .button.hover,
+ .button:hover {
+     border-color: green;
+     color: green;
+ }
+
+ .button.fill.hover,
+ .button.fill:hover {
+     background-color: green;
+     color: white;
+ }
+
+ .button.icon i {
+     padding-right: 1em;
+ }
+
+ /* слага иконка, но с unicode */
+ .button:before {
+     display: inline-block;
+     font-family: "Font Awesome 6 Free";
+     content: '\f103';
+     font-weight: 900;
+     margin-right: 0.5em;
+ }

@@ -1,0 +1,56 @@
+html {
+    font: 12px/1.5 "PT Sans", Arial, Helvetica, sans-serif;
+}
+/* @media (min-width: 800px) {
+    html { font-size: 14px;}
+}
+@media (min-width: 1024px) {
+    html { font-size: 16px;}
+}
+/* Nested within another conditional at-rule */
+/* @supports (display: flex) {
+    @media screen and (min-width: 900px) {
+      article {
+        display: flex;
+      }
+    }
+  }
+/* At the top level of your code */
+@media screen and (min-width: 900px) {
+    article {
+      padding: 1rem 3rem;
+    }
+  } */ */
+
+
+/* наследяване на шрифта на родителският параграф(html,body,.....) */
+body, form, table, input, textarea, option, select {
+    font: inherit;
+}
+/* padding,margint...т.н. когато са две стойности= top bottom, когато са четири= top,right,bottom,left */
+p {
+    margin: 0;
+    padding: 0 0 1em 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: 1px solid #CCC;
+}
+h1 { font-size: 2em;}
+h2 { font-size: 1,6em;}
+h3 { font-size: 1,2em;}
+/* Слага допълнително разстояние, в ситуация когато има параграф последван от заглавие */
+p + h2,
+p + h3 {
+    padding-top: 0.5em;
+}
+body {
+    background: blueviolet;
+    padding: 50px 100px;
+    /* line-height: 1.5;
+    font-size: 18px;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif; */
+}

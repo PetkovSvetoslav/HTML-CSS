@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Structure</title>
+</head>
+<body>
+
+    <header><h1>Structure</h1></header>
+
+    <aside>
+        <section>
+            <h3>Search</h3>
+            <form action="">
+                <input type="text">
+            </form>
+        </section>
+    </aside>
+    <p></p>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Customer Details</legend>
+            <!-- <label for="fn">
+                First Name
+                <input type="text" name="" id="fn" tabindex="0" placeholder="firstName">
+            </label> -->
+           <p> 
+               <label for="fn">First Name</label>
+                <input type="text" name="" id="fn" tabindex="1" placeholder="firstName" autofocus>
+            </p>
+            <p>
+                <label for="m">Last Name</label>
+                <input type="email" name="" id="m" tabindex="2" placeholder="email">
+            </p>
+<p>
+    <label for="male">Male</label>
+    <input type="radio" name="sex" value="male" id="male">
+
+    <label for="female">Female</label>
+    <input type="radio" name="sex" value="female" id="female">
+
+    <label for="other">Other</label>
+    <input type="radio" name="sex" value="other" id="other">
+</p>
+<p>
+    <label for="city">City</label>
+  <select name="city" id="city">
+      <option value="">select</option>
+      <option value="bg">Pleven</option>
+      <option value="bg">Sofia</option>
+
+  </select>
+</p>
+<p>
+    <label for="ice-cream-choice">Choose a flavor:</label>
+    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+    
+    <datalist id="ice-cream-flavors">
+        <option value="Chocolate">
+        <option value="Coconut">
+        <option value="Mint">
+        <option value="Strawberry">
+        <option value="Vanilla">
+    </datalist>
+    <label for="ice-cream-choice2">Choose a flavor:</label>
+    <input list="ice-cream-flavors" id="ice-cream-choice2" name="ice-cream-choice2" />
+</p>
+
+                <input type="submit">
+        </fieldset>
+    </form>
+    
+    <footer>
+        <p>All rights reserved &copy; 2000-2022</p>
+    </footer>
+</body>
+</html>

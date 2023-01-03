@@ -1,0 +1,63 @@
+@import url('matrix.css');
+@import url('position&Float.css');
+body {
+    padding: 1em;
+}
+.site {
+ max-width: 60em;
+ margin: auto;
+}
+/* @media (max-width: 600px) {
+    .site {
+        background: beige;
+    }
+} */
+@media ( max-width: 900px) {
+    .site {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .site-nav {
+        width: 100%;
+        flex: 1 0 100%;
+    }
+}
+@media ( min-width: 900px) {
+.site {
+    display: block;
+    flex-wrap: wrap;
+}
+.site-footer,
+.site-header {
+    flex: 1 0 100%
+}
+.site-main {
+    flex: 0 1 70%;
+    background-color: antiquewhite;
+}
+.site-sidebar {
+    flex: 0 1 30%;
+    background-color: blue;
+}
+}
+.site-nav {
+    display: flex;
+    background-color: bisque;
+    width: 100%;
+}
+.site > input {
+  /* padding: 2em;
+    margin: 2em; */
+    display: block;
+    position: absolute;
+    visibility: visible;
+    pointer-events: none;
+}
+.site-nav-toggle + .site-header .site-nav {
+    background: red;
+}
+.site-nav-toggle:checked + .site-header .site-nav {
+    background: blue;
+}

@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+ 
+html {
+    box-sizing: border-box;
+    font: 16px/1.5 "Fira Sans", Verdana, Helvetica, sans-serif;
+}
+body, form, table, input, textarea, option, select {
+    font: inherit;
+}
+/* padding,margint...т.н. когато са две стойности= top bottom, когато са четири= top,right,bottom,left */
+p {
+    margin: 0;
+    padding: 0 0 0.5em 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Sans', Verdana, Helvetica, sans-serif, monospace;
+    margin: 0;
+    /* padding-top: 0.5em;
+    padding-bottom: 0.5em; */
+    /* border: 1px solid #CCC; */
+}
+h1 { font-size: 2em;}
+h2 { font-size: 1,8em;}
+h3 { font-size: 1,6em;}
+h4 { font-size: 1,4em;}
+h5 { font-size: 1,2em;}
+h6 { font-size: 1em;}
+/* Слага допълнително разстояние, в ситуация когато има параграф последван от заглавие */
+p + h2,
+p + h3 {
+    padding-top: 0.5em;
+}

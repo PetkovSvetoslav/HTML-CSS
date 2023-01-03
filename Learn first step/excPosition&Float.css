@@ -1,0 +1,62 @@
+@import url('matrix.css');
+
+.viewport {
+    height: 100vh;
+    background-color: aqua;
+    position: relative;
+}
+.viewport2 {
+    height: 100vh;
+    background-color: bisque;
+    position: relative;
+    /* top: 50%;
+    left: 50%; */
+}
+.img {
+    position: absolute;
+    width: 12em;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.9) inset;
+    cursor: pointer;
+}
+.img::before {
+    display: block;
+    content: '';
+    padding-top: 100%;
+}
+.card .img {
+    position: absolute;
+top: 0; left: 0; right: 0; bottom: 0;
+}
+/* .viewport:nth-child(even) {
+    background-color: bisque;
+} */
+.card {
+    color: #000;
+    font-size: 2em;
+    position: absolute;
+    width: 12em;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 1rem 0.5em;
+    border-radius: 0.5em;
+}
+.card::before {
+    display: block;
+    content: '';
+    background: red;
+    padding-top: 100%;
+}
+
+.card .media {
+    position: absolute;
+/* top: 0; left: 0; right: 0; bottom: 0; */
+/* line-height: 1; */
+bottom: 1rem;
+right: 1em;
+}
+

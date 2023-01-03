@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssBoxModel.css">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .site-s {
+            min-height: 5em;
+        }
+        .site-s-header {
+            background: greenyellow;
+        }
+        .site-s-main {
+            background: rgb(109, 184, 255);
+            display: inline-block;
+            width: 50%;
+        }
+        .site-s-sidebar {
+            background: yellow;
+            display: inline-block;
+            width: 50%;
+        }
+        .site-s-footer {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header class="site-header">
+<section class="site-branding">
+<h1>My first blog</h1>
+<p>It was very cool</p>
+</section>
+<nav class="nav">
+    <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Blog</a></li>
+    </ul>
+</nav>
+        </header>
+
+        <main class="site-main">
+<article class="entry">
+    <header class="entry-header">
+<h3>My bloggggggg</h3>
+    </header>
+    <section class="entry-content">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis quibusdam alias libero corrupti excepturi eos velit similique omnis quaerat rerum, itaque voluptatem labore accusamus tempore dolores error consequatur sapiente?</p>
+    </section>
+    <footer class="entry-footer">
+<p>Posted on ....</p>
+    </footer>
+</article>
+        </main>
+
+    <aside class="site-sidebar">
+<section class="panel">
+    <header class="panel-header">
+<h3>Search</h3>
+    </header>
+    <div class="panel-content">
+<form action="#"><input type="search" value="search"></form>
+    </div>
+</section>
+    </aside>
+
+    <footer class="site-footer">
+All right reserved &copy; My first blog
+    </footer>
+</div>
+<!--  -->
+<div class="site">
+    <div class="site-s-header">Header</div>
+    <div class="site-s-main">Main</div><div class="site-s-sidebar">Sidebar</div>
+    <div class="site-s-footer">Footer</div>
+</div>
+</body>
+</html>

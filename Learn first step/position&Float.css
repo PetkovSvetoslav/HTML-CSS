@@ -1,0 +1,160 @@
+@import url('matrix.css');
+/* 
+.box{
+    width: 10%;
+    background: black;
+    float: left;
+    ще каже къде точно на екрана да се намира
+     position:absolute; 
+
+    margin: 0 1em 1em 0;
+}
+.box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 1em;
+    left: 1em;
+}
+.container {
+    background: red;
+
+    вариант за изчистване на float но в определени ситуации
+     overflow: hidden; 
+}
+.cleaner {
+      изчистване на float 
+    clear: both;
+}
+.main {
+    width: 50%;
+    background: blueviolet;
+    float: left;
+}
+.aside {
+    width: 40%;
+    background: yellow;
+    float: left;
+}
+ */
+ p, ul, ol {
+     padding-bottom: 1.5em;
+ }
+ .site {
+/* max-width: 60em; */
+margin: 0 auto;
+background: blueviolet;
+color: white;
+ }
+ .site-header {
+     padding: 1em;
+     
+ }
+ .site-header .site-title {
+     float: left;
+ }
+ .site-header .site-nav{
+    float: right;
+}
+.cleaner::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+ 
+.site-main {
+    padding: 1em;
+    width: 60%;
+    float: left;
+
+}
+
+.site-sidebar {
+    padding: 1em;
+    width: 40%;
+    float: left;
+
+}
+.site-footer {
+padding: 1em;
+clear: both;
+
+}
+.site-nav {
+    padding: 1em;
+
+}
+.site-nav ul {
+    padding: 0;
+    margin: 0;
+    background-color: bisque;
+
+}
+.site-nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: gray;
+}
+.site-nav > ul > li {
+    float: left;
+}
+
+.site-nav li {
+    display: block;
+    list-style: none outside;
+    position: relative;
+   
+}
+.site-nav li:hover > ul {
+    display: block;
+}
+.site-nav a {
+    display: block;
+    /* background-color: black; */
+color: white;
+padding: 1em 1.5em;
+text-decoration: none;
+}
+.site-nav li:hover > a,
+.site-nav a:hover {
+background-color: aqua;
+color: #000;
+}
+.ar-box {
+    display: block;
+    background-color: blue;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    overflow: hidden;
+    position: relative;
+}
+.ar-box::after {
+    display: block;
+    content: '';
+    height: 100px;
+    width: auto;
+    background-color: red;
+    padding-top: calc((9/16) * 100 * 1%);
+}
+.ar-box .inner {
+position: absolute;
+top: 0; left: 0; right: 0; bottom: 0;
+
+}
+.ar-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ar-box iframe {
+    display: block;
+    position: absolute;
+top: 0; left: 0; right: 0; bottom: 0;
+width: 100%;
+}
+

@@ -1,0 +1,48 @@
+/* @import url('cssTypography.css'); */
+@import url('matrix.css');
+.site {
+    max-width: 60em;
+    margin: 0 auto;
+}
+.galery {
+
+}
+.galery li{
+    display: inline-block;
+    width: 31%;
+    vertical-align: middle;
+    margin: 1.2% 1%;
+    border: 0.5em solid black;
+    padding: 0.5em;
+    /* отрязва снимката в рамките на li когато няма размер за img */
+    overflow: hidden;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 1);
+}
+.galery img{
+    display: block;
+    width: 100%;
+   height: auto;
+}
+.hero {
+    /* background-position: center;
+    background-size: cover; 
+    40% от височината на браузъра , vw от широчината (view port ...)
+      min-height: 40vh;*/
+
+      /* background снимка със background градиент */
+    background-image: url('https://images.unsplash.com/photo-1651459777229-cf09728eaac6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=512&q=80'), linear-gradient(#e66465, #9198e5);
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+
+    /* затъмнена снимка за фон */
+    /* background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url('https://images.unsplash.com/photo-1651459777229-cf09728eaac6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=512&q=80');
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover, cover; */
+
+}
+.hero h1 {
+    /* за да застане в центъра */
+    padding: 20vh o;
+    text-align: center;
+}
